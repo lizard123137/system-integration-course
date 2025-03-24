@@ -1,0 +1,16 @@
+<h1>home works!</h1>
+
+<ul>
+    <li *ngFor="let item of commodities$ | async">
+        {{ item }}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let item of conflicts$ | async">
+        {{ item }}
+    </li>
+</ul>
+
+{{ commodities$ | async | json }}
+{{ conflicts$ | async | json }}
