@@ -1,16 +1,8 @@
 <h1>home works!</h1>
 
-<ul>
-    <li *ngFor="let item of commodities$ | async">
-        {{ item }}
-    </li>
-</ul>
+<canvas #chart></canvas>
 
-<ul>
-    <li *ngFor="let item of conflicts$ | async">
-        {{ item }}
-    </li>
-</ul>
+<p>{{ conflicts_count }} conflicts found for selected period</p>
 
 {{ commodities$ | async | json }}
 {{ conflicts$ | async | json }}
